@@ -1,0 +1,186 @@
+/* カラー定義 */
+[data-md-color-scheme=slate][data-md-color-primary=black], [data-md-color-scheme=slate][data-md-color-primary=blue-grey], [data-md-color-scheme=slate][data-md-color-primary=grey], [data-md-color-scheme=slate][data-md-color-primary=white] {
+  --md-typeset-a-color: #0068b7;
+}
+[data-md-color-scheme="default"] {
+  --md-default-fg-color: rgba(26, 26, 28, 1); /* テキストカラー #1a1a1c */
+  --md-primary-fg-color: #efefef; /* ヘッダー */
+  --md-typeset-a-color: #0068b7; /* リンクカラー */
+  --md-accent-fg-color: #00aaff; /* リンクホバーカラー */
+  --md-footer-bg-color--dark: #efefef; /* フッター */
+  --md-footer-fg-color--light: #000000; /* フッターテキスト１ */
+  --md-footer-fg-color--lighter: #000000; /* フッターテキスト２ */
+}
+[data-md-color-scheme="slate"] {
+  --md-default-fg-color: #e0e0e0; /* テキストカラー */
+  --md-primary-fg-color: #0d0d0d; /* ヘッダー */
+  --md-default-bg-color: #161616;
+  --md-typeset-a-color: #0068b7; /* リンクカラー */
+  --md-accent-fg-color: #00aaff; /* リンクホバーカラー */
+  --md-footer-bg-color--dark: #0d0d0d; /* フッター */
+  --md-footer-fg-color--light: #fff; /* フッターテキスト１ */
+  --md-footer-fg-color--lighter: #fff; /* フッターテキスト２ */
+}
+/* フォント */
+:root {
+  --md-text-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         "Helvetica Neue", Arial, sans-serif,
+                         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+/* センタリング */
+.md-typeset h1 {
+  font-size: 2rem !important;
+  line-height: 1.4 !important;
+  margin-bottom: 6rem !important;
+  text-align: center;
+  color: var(--md-default-fg-color--light);
+}
+@media only screen and (max-width: 767px) {
+  .md-typeset h1 {
+    font-size: 2rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 4rem !important;
+    text-align: center;
+  }
+}
+.md-typeset h2 {
+  font-size: 2rem !important;
+  line-height: 1.4 !important;
+  margin-bottom: 6rem !important;
+  text-align: center;
+  color: var(--md-default-fg-color--light);
+}
+@media only screen and (max-width: 767px) {
+  .md-typeset h2 {
+    font-size: 2rem !important;
+    line-height: 1.4 !important;
+    margin-top: 4rem !important;
+    text-align: center;
+  }
+}
+.center {
+  text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  .center {
+    text-align: center;
+  }
+}
+.center-h {
+  margin-right: 17rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(100% - 17rem);
+}
+@media only screen and (max-width: 767px) {
+  .center-h {
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+.center-40 {
+  max-width: 40em;
+  width: 100%;
+  margin: 0 auto;
+  line-height: 2.4;
+}
+@media only screen and (max-width: 767px) {
+  .center-40 {
+      max-width: 100%;
+      width: 90%;
+  }
+}
+/* 画面調整 */
+.md-content { 
+  flex-grow: 1;
+  min-width: 0;
+  margin-bottom: 4rem; /* ボトム調整 */
+}
+.md-content__inner {  /* 画面余白調整 */
+  margin: 0 .4rem 0;
+  padding-top: 0;
+}
+.md-tabs__link:hover { /* タブのホバー色 */
+  color: var(--md-typeset-a-color);
+}
+.md-nav__link[for="__nav_2"] {
+  display: none;
+}
+.md-nav__link[for="__nav_3"] {
+  display: none;
+}
+.md-nav__link[for="__nav_4"] {
+  display: none;
+}
+/* 注釈ディレクティブ */
+.margin-note {
+  float: right;
+  width: 17rem;
+  font-size: 0.85em;
+  padding-left: 9rem;
+}
+@media only screen and (max-width: 767px) {
+  .margin-note {
+    float: none;
+    width: 100%;
+    padding-left: 0;
+  }
+}
+/* 箇条書き右寄せ */
+.right-align {
+  text-align: right;
+  list-style-position: inside;
+  padding-right: 20px; 
+}
+/* グリッドカード */
+.cards li:hover {
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1) !important;
+}
+.cards.center > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  .cards.center > div {
+    text-align: left;
+    justify-content: flex-start;
+  }
+}
+.cards.left > div {
+  text-align: left;
+}
+@media only screen and (max-width: 767px) {
+  .cards.center > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 767px) {
+  div.margin-note {
+    display: none;
+    }
+}
+/* シェアボタン */
+.bdg-dark {
+  display: inline-block;
+  margin: 0;
+  padding: .35em .65em;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  color: #FFFFFF !important;
+  background-color: #000000;
+} 
+.bdg-dark:hover {
+  background-color: #707070;
+  color: #FFFFFF;
+}
