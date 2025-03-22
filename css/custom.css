@@ -27,36 +27,33 @@
                          "Helvetica Neue", Arial, sans-serif,
                          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-.md-content p {
-  line-height: 2.4;
-}
 /* センタリング */
 .md-typeset h1 {
   font-size: 2rem !important;
-  line-height: 1.4 !important;
+  line-height: 1.5 !important;
   margin-bottom: 6rem !important;
   text-align: center;
   color: var(--md-default-fg-color--light);
 }
 @media only screen and (max-width: 767px) {
   .md-typeset h1 {
-    font-size: 2rem !important;
-    line-height: 1.4 !important;
+    font-size: 1.5rem !important;
+    line-height: 1.5 !important;
     margin-bottom: 4rem !important;
     text-align: left;
   }
 }
 .md-typeset h2 {
   font-size: 2rem !important;
-  line-height: 1.4 !important;
+  line-height: 1.5 !important;
   margin-bottom: 6rem !important;
   text-align: center;
   color: var(--md-default-fg-color--light);
 }
 @media only screen and (max-width: 767px) {
   .md-typeset h2 {
-    font-size: 2rem !important;
-    line-height: 1.4 !important;
+    font-size: 1.5rem !important;
+    line-height: 1.5 !important;
     margin-top: 4rem !important;
     text-align: left;
   }
@@ -73,25 +70,13 @@
   margin-right: 12.1rem;
   margin-left: auto;
   margin-right: auto;
-  width: calc(100% - 17rem);
+  width: calc(100% - 12.1rem);
 }
 @media only screen and (max-width: 767px) {
   .center-h {
     margin-right: 0;
     width: 100%;
     text-align: left;
-  }
-}
-.center-40 {
-  max-width: 40em;
-  width: 100%;
-  margin: 0 auto;
-  line-height: 2.4;
-}
-@media only screen and (max-width: 767px) {
-  .center-40 {
-      max-width: 100%;
-      width: 90%;
   }
 }
 /* 画面調整 */
@@ -101,56 +86,41 @@
   margin-bottom: 4rem; /* ボトム調整 */
 }
 .md-content__inner {  /* 画面余白調整 */
-  margin: 0 .4rem 0;
+  margin: 0 2rem;
   padding-top: 0;
 }
+@media only screen and (max-width: 767px) {
+  .md-content__inner {  /* 画面余白調整 */
+    margin: 0 0.5rem;
+    padding-top: 0;
+}
+@
 .md-tabs__link:hover { /* タブのホバー色 */
   color: var(--md-typeset-a-color);
 }
-.md-nav__link[for="__nav_2"] {
-  display: none;
-}
-.md-nav__link[for="__nav_3"] {
-  display: none;
-}
-.md-nav__link[for="__nav_4"] {
-  display: none;
-}
-/* 注釈ディレクティブ */
-.margin-note {
-  float: right;
-  width: 12.1rem;
-  font-size: 0.85em;
-  line-height: 1.6;
-}
-@media only screen and (max-width: 767px) {
-  .margin-note {
-    float: none;
-    width: 100%;
-    padding-left: 0;
-  }
-}
 /* インデント・箇条書き右寄せ */
-/* 追加）インデント設定 */
 .idt {
-  text-indent:1em;
-  max-width: 40em;
+  max-width: 38em;
+  line-height: 2.4;
   margin-block-start: 0em;
   margin-block-end: 0em;
+  text-indent:1em;
   }
 .hg-idt {
+  max-width: 38em;
+  line-height: 2.4;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
   padding-left:1em;
   text-indent:-1em;
-  max-width: 40em;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
   }
 .hg-idt2 {
-  padding-left:2em;
-  text-indent:-2em;
-  max-width: 40em;
+  max-width: 38em;
+  line-height: 2.4;
   margin-block-start: 0em;
   margin-block-end: 0em;
+  padding-left:2em;
+  text-indent:-2em;
   }
 .pad1 {
   padding-left:1em;
@@ -175,42 +145,29 @@
   padding-left:1em;
   text-indent:-1em;
   }  
-.right-align {
-  text-align: right;
-  list-style-position: inside;
-  padding-right: 20px; 
-}
-/* グリッドカード */
-.cards li:hover {
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1) !important;
-}
-.cards.center > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+
+/* 注釈ディレクティブ */
+.margin-note {
+  float: right ;
+  width: 12.1rem;
+  font-size: 0.85em;
+  line-height: 1.6;
 }
 @media only screen and (max-width: 767px) {
-  .cards.center > div {
-    text-align: left;
-    justify-content: flex-start;
-  }
-}
-.cards.left > div {
-  text-align: left;
-}
-@media only screen and (max-width: 767px) {
-  .cards.center > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
+  .margin-note {
+    float: none;
+    width: 100%;
+    padding-left: 0;
   }
 }
 @media only screen and (max-width: 767px) {
   div.margin-note {
     display: none;
     }
+}
+/* グリッドカード */
+.cards li:hover {
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1) !important;
 }
 /* シェアボタン */
 .bdg-dark {
