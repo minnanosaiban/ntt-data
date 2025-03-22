@@ -1,3 +1,12 @@
+/* デフォルト */
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
 /* カラー定義 */
 [data-md-color-scheme=slate][data-md-color-primary=black], [data-md-color-scheme=slate][data-md-color-primary=blue-grey], [data-md-color-scheme=slate][data-md-color-primary=grey], [data-md-color-scheme=slate][data-md-color-primary=white] {
   --md-typeset-a-color: #0068b7;
@@ -91,6 +100,8 @@
 .md-content { 
   flex-grow: 1;
   min-width: 0;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
   margin-bottom: 4rem; /* ボトム調整 */
 }
 .md-content__inner {  /* 画面余白調整 */
@@ -116,54 +127,6 @@
     max-width: 100%; /* 画面幅に合わせて調整 */
   }
 }
-/* インデント・箇条書き右寄せ */
-.idt {
-  max-width: 38em;
-  line-height: 2.4;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  text-indent:1em;
-  }
-.hg-idt {
-  max-width: 38em;
-  line-height: 2.4;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  padding-left:1em;
-  text-indent:-1em;
-  }
-.hg-idt2 {
-  max-width: 38em;
-  line-height: 2.4;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  padding-left:2em;
-  text-indent:-2em;
-  }
-.pad1 {
-  padding-left:1em;
-  }
-.pad2 {
-  padding-left:2em;
-  }
-.pad3 {
-  padding-left:3em;
-  }
-.pad4 {
-  padding-left:4em;
-  }
-.pad5 {
-  padding-left:5em;
-  }
-.pad6 {
-  padding-left:6em;
-  }
-.foot {
-  font-size: 0.85em;
-  padding-left:1em;
-  text-indent:-1em;
-  }  
-
 /* 注釈ディレクティブ */
 .margin-note {
   float: right ;
