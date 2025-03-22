@@ -92,14 +92,21 @@
 .md-tabs__link:hover { /* タブのホバー色 */
   color: var(--md-typeset-a-color);
 }
-@media only screen and (max-width: 767px) {
-  .md-content__inner {  /* 画面余白調整 */
-    margin: 0 0.5rem;
-    padding-top: 0;
+.md-sidebar__inner { /* サイドバーの横スクロールを隠す */
+  overflow: hidden !important;
 }
-@
-.md-tabs__link:hover { /* タブのホバー色 */
-  color: var(--md-typeset-a-color);
+.md-sidebar__scrollwrap { /* サイドバーの横スクロールの色を薄くする */
+  scrollbar-color: var(--md-primary-fg-color) #0000;
+  scrollbar-width: 1px !important;
+}
+@media only screen and (max-width: 767px) {
+  .md-sidebar {
+    width: 12.1rem;
+  }
+  .md-nav__list {
+    width: auto;
+    max-width: 100%; /* 画面幅に合わせて調整 */
+  }
 }
 /* インデント・箇条書き右寄せ */
 .idt {
