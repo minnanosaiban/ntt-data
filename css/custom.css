@@ -89,6 +89,9 @@
   margin: 0 2rem;
   padding-top: 0;
 }
+.md-tabs__link:hover { /* タブのホバー色 */
+  color: var(--md-typeset-a-color);
+}
 @media only screen and (max-width: 767px) {
   .md-content__inner {  /* 画面余白調整 */
     margin: 0 0.5rem;
