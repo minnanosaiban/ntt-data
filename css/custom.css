@@ -3,7 +3,7 @@
   --md-typeset-a-color: #0068b7;
 }
 [data-md-color-scheme="default"] {
-  --md-default-fg-color: rgba(26, 26, 28, 1); /* テキストカラー #1a1a1c */
+  --md-typeset-color: #1a1a1c; /* テキストカラー*/
   --md-primary-fg-color: #efefef; /* ヘッダー */
   --md-typeset-a-color: #0068b7; /* リンクカラー */
   --md-accent-fg-color: #0068b7; /* リンクホバーカラー */
@@ -12,9 +12,7 @@
   --md-footer-fg-color--lighter: #000000; /* フッターテキスト２ */
 }
 [data-md-color-scheme="slate"] {
-  --md-default-fg-color: #e0e0e0; /* テキストカラー */
   --md-primary-fg-color: #0d0d0d; /* ヘッダー */
-  --md-default-bg-color: #161616;
   --md-typeset-a-color: #0068b7; /* リンクカラー */
   --md-accent-fg-color: #0068b7; /* リンクホバーカラー */
   --md-footer-bg-color--dark: #0d0d0d; /* フッター */
@@ -48,7 +46,6 @@
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   unicode-bidi: isolate;
-  color: var(--md-default-fg-color);
   line-height: 2 !important;
 }
 .md-content h1 {
@@ -128,7 +125,7 @@
   overflow: hidden !important;
 }
 .md-sidebar__scrollwrap { /* サイドバーの横スクロールの色を薄くする */
-  scrollbar-color: var(--md-primary-fg-color) #0000;
+  scrollbar-color: #0000;
   scrollbar-width: 1px !important;
 }
 /* サイドバーのホバーとアクティブを太字 */
