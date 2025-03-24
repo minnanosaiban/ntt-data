@@ -1,20 +1,17 @@
 /* カラー定義 */
-[data-md-color-scheme=slate][data-md-color-primary=black], [data-md-color-scheme=slate][data-md-color-primary=blue-grey], [data-md-color-scheme=slate][data-md-color-primary=grey], [data-md-color-scheme=slate][data-md-color-primary=white] {
-  --md-typeset-a-color: #0068b7;
-}
 [data-md-color-scheme="default"] {
-  --md-typeset-color: #1a1a1c; /* テキストカラー*/
+  --md-typeset-color: #2E404d; /* テキストカラー*/
   --md-primary-fg-color: #efefef; /* ヘッダー */
-  --md-typeset-a-color: #0068b7; /* リンクカラー */
-  --md-accent-fg-color: #0068b7; /* リンクホバーカラー */
+  --md-typeset-a-color: #2E404d; /* リンクカラー */
+  --md-accent-fg-color: #2E404d; /* リンクホバーカラー */
   --md-footer-bg-color--dark: #efefef; /* フッター */
   --md-footer-fg-color--light: #000000; /* フッターテキスト１ */
   --md-footer-fg-color--lighter: #000000; /* フッターテキスト２ */
 }
 [data-md-color-scheme="slate"] {
   --md-primary-fg-color: #0d0d0d; /* ヘッダー */
-  --md-typeset-a-color: #0068b7; /* リンクカラー */
-  --md-accent-fg-color: #0068b7; /* リンクホバーカラー */
+  --md-typeset-a-color: #2E404d; /* リンクカラー */
+  --md-accent-fg-color: #2E404d; /* リンクホバーカラー */
   --md-footer-bg-color--dark: #0d0d0d; /* フッター */
   --md-footer-fg-color--light: #fff; /* フッターテキスト１ */
   --md-footer-fg-color--lighter: #fff; /* フッターテキスト２ */
@@ -26,17 +23,17 @@
                          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 /* リンクテキスト */ 
-.link-line:hover {  /* リンクテキスト（ホバーで太字・青字・下線） */
+.link-line:hover { /* リンクテキスト（ホバーで青下線） */
   font-weight: 700;
-  color: var(--md-typeset-a-color) !important;
   text-decoration: underline !important;
   text-underline-offset: 8px;
-  text-decoration-color: var(--md-typeset-a-color) !important;
+  text-decoration-color: #0068b7 !important;
 }
 .card-text-center { /* カードのテキストは行間を詰める */
   margin-block-start: 0em !important;
   margin-block-end: 0em !important;
   text-align: center;
+  color: var(--md-typeset-color);
 }
 /* タイプセット・センタリング・右寄せ */
 .md-content p {
@@ -53,7 +50,7 @@
   line-height: 1.5 !important;
   margin-bottom: 6rem !important;
   text-align: center;
-  color: var(--md-default-fg-color--light);
+  color: var(--md-typeset-color);
 }
 @media only screen and (max-width: 767px) {
   .md-content h1 {
@@ -61,6 +58,7 @@
     line-height: 1.5 !important;
     margin-bottom: 4rem !important;
     text-align: left;
+    color: var(--md-typeset-color);
   }
 }
 .md-content h2 {
@@ -105,6 +103,53 @@
     text-align: left;
   }
 }
+/* インデント */
+.idt {
+  max-width: 38em;
+  line-height: 2.4;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  text-indent:1em;
+  }
+.hg-idt {
+  max-width: 38em;
+  line-height: 2.4;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding-left:1em;
+  text-indent:-1em;
+  }
+.hg-idt2 {
+  max-width: 38em;
+  line-height: 2.4;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding-left:2em;
+  text-indent:-2em;
+  }
+.pad1 {
+  padding-left:1em;
+  }
+.pad2 {
+  padding-left:2em;
+  }
+.pad3 {
+  padding-left:3em;
+  }
+.pad4 {
+  padding-left:4em;
+  }
+.pad5 {
+  padding-left:5em;
+  }
+.pad6 {
+  padding-left:6em;
+  }
+.foot {
+  font-size: 0.85em;
+  padding-left:1em;
+  text-indent:-1em;
+  } 
 /* 画面調整 */
 .md-content { 
   flex-grow: 1;
@@ -118,8 +163,10 @@
   padding-top: 0;
 }
 .md-tabs__link:hover { /* タブのホバー色 */
-  color: var(--md-typeset-a-color);
   font-weight: 700;
+  text-decoration: underline !important;
+  text-underline-offset: 8px;
+  text-decoration-color: #0068b7 !important;
 }
 .md-sidebar__inner { /* サイドバーの横スクロールを隠す */
   overflow: hidden !important;
