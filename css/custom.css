@@ -2,16 +2,17 @@
 [data-md-color-scheme="default"] {
   --md-typeset-color: #2E404d; /* テキストカラー*/
   --md-primary-fg-color: #efefef; /* ヘッダー */
-  --md-typeset-a-color: #2E404d; /* リンクカラー */
-  --md-accent-fg-color: #2E404d; /* リンクホバーカラー */
+  --md-typeset-a-color: #0068b7; /* リンクカラー */
+  --md-accent-fg-color: #8bb6d6; /* アクセントカラー */
   --md-footer-bg-color--dark: #efefef; /* フッター */
   --md-footer-fg-color--light: #000000; /* フッターテキスト１ */
   --md-footer-fg-color--lighter: #000000; /* フッターテキスト２ */
 }
 [data-md-color-scheme="slate"] {
+  --md-typeset-color: var(--md-default-fg-color--light); /* テキストカラー*/
   --md-primary-fg-color: #0d0d0d; /* ヘッダー */
-  --md-typeset-a-color: #2E404d; /* リンクカラー */
-  --md-accent-fg-color: #2E404d; /* リンクホバーカラー */
+  --md-typeset-a-color: #0068b7; /* リンクカラー */
+  --md-accent-fg-color: #8bb6d6; /* アクセントカラー */
   --md-footer-bg-color--dark: #0d0d0d; /* フッター */
   --md-footer-fg-color--light: #fff; /* フッターテキスト１ */
   --md-footer-fg-color--lighter: #fff; /* フッターテキスト２ */
@@ -22,7 +23,10 @@
                          "Helvetica Neue", Arial, sans-serif,
                          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-/* リンクテキスト */ 
+/* リンクテキスト */
+.link-line { /* リンクテキスト（ホバーで青下線） */
+  color: var(--md-typeset-color) !important;
+}
 .link-line:hover { /* リンクテキスト（ホバーで青下線） */
   font-weight: 700;
   text-decoration: underline !important;
@@ -33,7 +37,6 @@
   margin-block-start: 0em !important;
   margin-block-end: 0em !important;
   text-align: center;
-  color: var(--md-typeset-color);
 }
 /* タイプセット・センタリング・右寄せ */
 .md-content p {
@@ -65,13 +68,14 @@
   font-size: 2rem !important;
   line-height: 1.5 !important;
   text-align: center;
-  color: var(--md-default-fg-color--light);
+  color: var(--md-typeset-color);
 }
 @media only screen and (max-width: 767px) {
   .md-content h2 {
     font-size: 1.5rem !important;
     line-height: 1.5 !important;
     text-align: left;
+    color: var(--md-typeset-color);
   }
 }
 .right {
@@ -183,6 +187,24 @@
 .md-nav__link--active:hover {
   font-weight: 700;
 }
+/* リンクボタン */
+.bdg-link {
+  display: inline-block;
+  margin: 0;
+  padding: .35em .65em;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.75rem;
+  color: #FFFFFF !important;
+  background-color: #0068b7;
+} 
+.bdg-link:hover {
+  background-color: #8bb6d6;
+  color: #FFFFFF;
+}
 /* シェアボタン */
 .bdg-dark {
   display: inline-block;
@@ -240,7 +262,7 @@
   overflow: hidden;
   width: 100%;
   background: #fff;
-margin-bottom: 4rem;
+  margin-bottom: 4rem;
 } 
 .link-card a {
   display: block;
