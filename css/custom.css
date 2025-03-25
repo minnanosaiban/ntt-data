@@ -173,7 +173,7 @@
   padding-left:6em;
   }
 .foot {
-  font-size: 0.85em;
+  font-size: 0.8em;
   padding-left:1em;
   text-indent:-1em;
   } 
@@ -219,7 +219,7 @@
   font-weight: 700;
 }
 /* リンクボタン */
-.bdg-link {
+.links {
   display: inline-block;
   margin: 0;
   padding: .35em .65em;
@@ -230,18 +230,36 @@
   vertical-align: baseline;
   border-radius: 0.75rem;
   color: #FFFFFF !important;
-  background-color: #0068b7;
+  background-color: #2E404d;;
 } 
-.bdg-link:hover {
-  background-color: #8bb6d6;
-  color: #FFFFFF;
+.links:hover {
+  background-color: #707070;
+  color: #FFFFFF !important;
+}
+/* リンクボタン */
+.docs-link {
+  display: inline-block;
+  margin: 0;
+  padding: .35em .65em;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.75rem;
+  color: #ffc400 !important;
+  background-color: #070f26;
+} 
+.docs-link:hover {
+  background-color: #707070;
+  color: #FFFFFF !important; 
 }
 /* シェアボタン */
 .bdg-dark {
   display: inline-block;
   margin: 0;
   padding: .35em .65em;
-  font-size: 0.5rem;
+  font-size: 10px;
   font-weight: 400;
   line-height: 1;
   text-align: center;
