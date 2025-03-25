@@ -5,17 +5,17 @@
   --md-typeset-a-color: #0068b7; /* リンクカラー */
   --md-accent-fg-color: #8bb6d6; /* アクセントカラー */
   --md-footer-bg-color--dark: #efefef; /* フッター */
-  --md-footer-fg-color--light: #000000; /* フッターテキスト１ */
-  --md-footer-fg-color--lighter: #000000; /* フッターテキスト２ */
+  --md-footer-fg-color--light: #2E404d; /* フッターテキスト１ */
+  --md-footer-fg-color--lighter: #2E404d; /* フッターテキスト２ */
 }
 [data-md-color-scheme="slate"] {
-  --md-typeset-color: var(--md-default-fg-color--light); /* テキストカラー*/
-  --md-primary-fg-color: #0d0d0d; /* ヘッダー */
+  --md-typeset-color: #E0E0E0; /* テキストカラー*/
+  --md-primary-fg-color: #070f26 !important; /* ヘッダー */
   --md-typeset-a-color: #0068b7; /* リンクカラー */
   --md-accent-fg-color: #8bb6d6; /* アクセントカラー */
-  --md-footer-bg-color--dark: #0d0d0d; /* フッター */
-  --md-footer-fg-color--light: #fff; /* フッターテキスト１ */
-  --md-footer-fg-color--lighter: #fff; /* フッターテキスト２ */
+  --md-footer-bg-color--dark: #070f26; /* フッター */
+  --md-footer-fg-color--light: var(--md-default-fg-color--light); /* フッターテキスト１ */
+  --md-footer-fg-color--lighter: var(--md-default-fg-color--light); /* フッターテキスト２ */
 }
 /* フォント */
 :root {
@@ -246,12 +246,12 @@
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: 0.75rem;
-  color: #FFFFFF !important;
+  color: #E0E0E0 !important;
   background-color: #2E404d;;
 } 
 .link:hover {
   background-color: #707070;
-  color: #FFFFFF !important;
+  color: #E0E0E0 !important;
 }
 /* シェアボタン */
 .bdg-dark {
@@ -265,12 +265,12 @@
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: 0.25rem;
-  color: #FFFFFF !important;
+  color: #E0E0E0 !important;
   background-color: #000000;
 } 
 .bdg-dark:hover {
   background-color: #707070;
-  color: #FFFFFF;
+  color: #E0E0E0;
 }
 /* 注釈ディレクティブ */
 .margin-note {
