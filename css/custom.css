@@ -229,15 +229,14 @@
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: 0.75rem;
-  color: #FFFFFF !important;
-  background-color: #2E404d;;
+  color: #2E404d !important;
+  background-color: #efefef;
 } 
 .links:hover {
   background-color: #707070;
-  color: #FFFFFF !important;
+  color: #2E404d !important;
 }
-/* リンクボタン */
-.docs-link {
+.link {
   display: inline-block;
   margin: 0;
   padding: .35em .65em;
@@ -247,12 +246,12 @@
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: 0.75rem;
-  color: #ffc400 !important;
-  background-color: #070f26;
+  color: #FFFFFF !important;
+  background-color: #2E404d;;
 } 
-.docs-link:hover {
+.link:hover {
   background-color: #707070;
-  color: #FFFFFF !important; 
+  color: #FFFFFF !important;
 }
 /* シェアボタン */
 .bdg-dark {
@@ -297,6 +296,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  margin: 1rem 0;
+  max-width: 38em;
 }
 .card {
   border: 1px solid #ddd;
