@@ -24,27 +24,40 @@
                          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 /* リンクテキスト */
-.link-line { /* リンクテキスト（ホバーで青下線） */
+.card-text-center {
+  margin-block-start: 0em !important;
+  margin-block-end: 0em !important;
+  text-align: center;
+}
+.card-text-left {
+  margin-block-start: 0em !important;
+  margin-block-end: 0em !important;
+  text-align: left;
+}
+.link-title {
+  color: #070f26 !important;
+  font-weight: 700;
+  text-decoration: underline !important;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--md-accent-fg-color) !important;
+  margin-bottom: 0.5em !important;
+}
+.link-line {
   color: var(--md-typeset-color) !important;
   text-decoration: none !important;
 }
-.link-line:hover { /* リンクテキスト（ホバーで細い青下線） */
+.link-line:hover {
   font-weight: 400;
   text-decoration: underline !important;
   text-underline-offset: 8px;
   text-decoration-color: var(--md-accent-fg-color) !important;
 }
-.link-blue { /* リンクテキスト（ホバーで青字） */
+.link-blue {
   color: var(--md-typeset-color) !important;
 }
-.link-blue:hover { /* リンクテキスト（ホバーで細い青下線） */
+.link-blue:hover {
   font-weight: 700;
   color: var(--md-typeset-a-color) !important;
-}
-.card-text-center { /* カードのテキストは行間を詰める */
-  margin-block-start: 0em !important;
-  margin-block-end: 0em !important;
-  text-align: center;
 }
 /* タイプセット・センタリング・右寄せ */
 .md-content p {
@@ -197,6 +210,10 @@
 .md-content__inner {  /* 画面余白調整 */
   padding-top: 0;
 }
+.md-tabs__item--active .md-tabs__link {
+  color: #0068b7 !important;
+  font-weight: 700;
+}
 .md-tabs__link:hover { /* タブのホバー色 */
   font-weight: 700;
   text-decoration: underline !important;
@@ -233,8 +250,8 @@
   background-color: #efefef;
 } 
 .links:hover {
-  background-color: #707070;
   color: #2E404d !important;
+  background-color: #e0e0e0;
 }
 .link {
   display: inline-block;
@@ -265,12 +282,12 @@
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: 0.25rem;
-  color: #E0E0E0 !important;
+  color: #FFFFFF !important;
   background-color: #000000;
 } 
 .bdg-dark:hover {
   background-color: #707070;
-  color: #E0E0E0;
+  color: #FFFFFF;
 }
 /* 注釈ディレクティブ */
 .margin-note {
